@@ -3,11 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <h1>Caesar Cipher</h1>
+    
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <script src="tests.js"></script>
+
+    Digite aqui o texto:<input type="text" id="texto">
+    <br>
+    Deslocamento desejado: <input type="text" id="deslocamento">
+    <br>
+
+    <button onclick= "encode()"> Cifrar!</button>
+    <p id="cifrado"></p>
+
+    <button onclick= "decode()"> Decifrar!</button>
+    <p id="decifrado"></p>
+    
   </body>
 </html>
