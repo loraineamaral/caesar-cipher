@@ -1,0 +1,88 @@
+body{
+    background-image: url(https://images.alphacoders.com/667/667442.jpg);
+    text-align: center;
+}
+
+h1{  
+  font-family: 'Major Mono Display', monospace;
+  font-size: 35px;
+  padding: 30px;
+  border: none;
+  background-color:black;
+  text-align: center;
+  color: white;
+  margin-top: 0%;
+}
+
+.title2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;  
+    color: white;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;  
+    color: white;
+}
+
+#texto{
+    background-color: white;
+    height: 90px;
+    width: 350px;
+    font-size: 20px;
+    border: 3px double black;  
+    position: relative;
+    top: 20%;
+    left: 0%;
+} 
+
+#deslocamento{
+    background-color: white;
+    height: 40px;
+    width: 90px;
+    font-size: 20px;
+    border: 3px double black;
+    margin-bottom: 1%;
+    margin-right: 2,5%   
+}
+
+#textocifrado{
+    background-color: white;
+    height: 90px;
+    width: 350px;
+    text-align: center;
+    resize: none;
+    font-size: 20px;
+    border: 3px double black;
+}
+  .button1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+	color: white;
+    padding: 8px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#f0f0f0 0%,
+		#b8b8b8 25%,
+		#6b6b6b 75%,
+		#424242);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#f0f0f0),
+		color-stop(0.25, #b8b8b8),
+		color-stop(0.75, #6b6b6b),
+		to(#424242));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    border: 0px solid #171717; 
+    margin-left: 2%;
+  }
+
+
+

@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <h1>Caesar Cipher</h1>
-    
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="tests.js"></script>
 
-    Digite aqui o texto:<input type="text" id="texto">
-    <br>
-    Deslocamento desejado: <input type="text" id="deslocamento">
-    <br>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <h1>CAESAR CYPHER</h1>
+  <p class="title2"> Use a cifra de César para cifrar e decifrar uma mensagem!
+    Escolha a opção e o deslocamento desejado!</p>
+  </h1>
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <button onclick= "encode()"> Cifrar!</button>
-    <p id="cifrado"></p>
+<body>
+  <script src="./cipher.js"></script>
+  <script src="tests.js"></script>
 
-    <button onclick= "decode()"> Decifrar!</button>
-    <p id="decifrado"></p>
-    
-  </body>
+  <div>
+    <form>
+      <p>Digite aqui o texto: </p> <input type="text" id="texto">
+      <p>Deslocamento desejado:</p> <input type="number" id="deslocamento">
+
+      <button class=button1 type="reset">Limpar</button>
+    </form>
+  </div>
+
+  <div>
+    <button class=button1 onclick="encode()"> CIFRAR!</button>
+    <button class=button1 onclick="decode()"> DECIFRAR! </button>
+  </div>
+
+  <div>
+    <form>
+      <p><label for="textocifrado">Veja aqui seu texto:</label></p>
+      <textarea id="textocifrado" name="Seu Texto"></textarea>
+
+  </div>
+
+  <div>
+
+  </div>
+</body>
+
 </html>
