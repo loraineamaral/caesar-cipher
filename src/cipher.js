@@ -1,16 +1,16 @@
 function encode() {
-  let texto = document.getElementById("texto").value;
-  let offSet = parseInt(document.getElementById("deslocamento").value);
-  document.getElementById("textocifrado").innerHTML = cypherEnc(texto, offSet);
+  let userInput = document.getElementById("userInput").value;
+  let offSet = parseInt(document.getElementById("userOffset").value);
+  document.getElementById("changedText").innerHTML = cypherEnc(userInput, offSet);
 }
 
-function cypherEnc(texto, offSet) {
+function cypherEnc(userInput, offSet) {
   let textArray = [];
   let ascArray = [];
   let codedText = "";
 
-  for (let i = 0; i < texto.length; i++) {
-    textArray.push(texto.charCodeAt(i));
+  for (let i = 0; i < userInput.length; i++) {
+    textArray.push(userInput.charCodeAt(i));
   }
 
   if (offSet > 0) {
@@ -44,18 +44,18 @@ function cypherEnc(texto, offSet) {
 }
 
 function decode() {
-  let texto = document.getElementById("texto").value;
-  let offSet = parseInt(document.getElementById("deslocamento").value);
-  document.getElementById("textocifrado").innerHTML = cypherDec(texto, offSet);
+  let userInput = document.getElementById("userInput").value;
+  let offSet = parseInt(document.getElementById("userOffset").value);
+  document.getElementById("changedText").innerHTML = cypherDec(userInput, offSet);
 }
 
-function cypherDec(texto, offSet) {
+function cypherDec(userInput, offSet) {
   let textArray = [];
   let ascArray = [];
   let decodedText = "";
 
-  for (let i = 0; i < texto.length; i++) {
-    textArray.push(texto.charCodeAt(i));
+  for (let i = 0; i < userInput.length; i++) {
+    textArray.push(userInput.charCodeAt(i));
   }
 
   if (offSet > 0) {

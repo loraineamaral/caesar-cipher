@@ -15,7 +15,6 @@ cypherTests(cypherEnc("AZUL", -9), "RQLC");
 cypherTests(cypherEnc("Banana!*/", 24), "Zylyly!*/");
 cypherTests(cypherEnc("Rua 768", 14), "Fio 768");
 cypherTests(cypherEnc("Rua 768", 26), "Rua 768");
-
 cypherTests(cypherDec("hij", 33), "abc");
 cypherTests(cypherDec("BAVM", 1), "AZUL");
 cypherTests(cypherDec("VAGC", 1), "AZUL"); //não passa
