@@ -1,4 +1,4 @@
-function testEnc(calculado, esperado) {
+function cypherTests(calculado, esperado) {
     if (calculado === esperado) {
       console.log("Passou!");
       return true;
@@ -8,28 +8,18 @@ function testEnc(calculado, esperado) {
     }
   }
 
-console.log("Teste para a função Cifrar: ")
-testEnc(cypherEnc("abc", 33), "hij");
-testEnc(cypherEnc("BANANA", 1), "DCPCPC");
-testEnc(cypherEnc("BANANA", 1), "CBOBOB");
-testEnc(cypherEnc("Banana!", 1), "Cbobob!");
-testEnc(cypherEnc("Rua 768", 14), "Fio 768");
-testEnc(cypherEnc("Rua 768", 26), "Rua 768");
+cypherTests(cypherEnc("abc", 33), "hij");
+cypherTests(cypherEnc("AZUL", 1), "BAVM");
+cypherTests(cypherEnc("AZUL", -1), "VAGC"); //não passa
+cypherTests(cypherEnc("AZUL", -9), "RQLC");
+cypherTests(cypherEnc("Banana!*/", 24), "Zylyly!*/");
+cypherTests(cypherEnc("Rua 768", 14), "Fio 768");
+cypherTests(cypherEnc("Rua 768", 26), "Rua 768");
 
-function testDec(calculado, esperado) {
-  if (calculado === esperado) {
-    console.log("Passou!");
-    return true;
-  }else {
-    console.log("O resultado foi igual a: " + calculado + " Diferente de: " + esperado);
-    return false;
-  }
-}
-
-console.log("Teste para a função Decifrar: ")
-testDec(cypherDec("hij", 33), "abc");
-testDec(cypherDec("DCPCPC", 1), "BANANA");
-testDec(cypherDec("CBOBOB", 1), "BANANA");
-testDec(cypherDec("Cbobob!", 1), "Banana!");
-testDec(cypherDec("Fio 768", 14), "Rua 768");
-testDec(cypherDec("Rua 768", 26), "Rua 768");
+cypherTests(cypherDec("hij", 33), "abc");
+cypherTests(cypherDec("BAVM", 1), "AZUL");
+cypherTests(cypherDec("VAGC", 1), "AZUL"); //não passa
+cypherTests(cypherDec("RQLC", -9), "AZUL");
+cypherTests(cypherDec("Zylyly!*/", 24), "Banana!*/");
+cypherTests(cypherDec("Fio 768", 14), "Rua 768");
+cypherTests(cypherDec("Rua 768", 26), "Rua 768");

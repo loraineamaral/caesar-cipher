@@ -6,7 +6,7 @@ body{
 h1{  
   font-family: 'Major Mono Display', monospace;
   font-size: 35px;
-  padding: 30px;
+  padding: 28px;
   border: none;
   background-color:black;
   text-align: center;
@@ -31,7 +31,7 @@ p {
 
 #texto{
     background-color: white;
-    height: 90px;
+    height: 80px;
     width: 350px;
     font-size: 20px;
     border: 3px double black;  
@@ -42,7 +42,7 @@ p {
 
 #deslocamento{
     background-color: white;
-    height: 40px;
+    height: 30px;
     width: 90px;
     font-size: 20px;
     border: 3px double black;
@@ -52,7 +52,7 @@ p {
 
 #textocifrado{
     background-color: white;
-    height: 90px;
+    height: 80px;
     width: 350px;
     text-align: center;
     resize: none;
@@ -84,5 +84,31 @@ p {
     margin-left: 2%;
   }
 
-
+  .button2{
+    -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24537;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+    margin-top: 1%;
+  }
 
