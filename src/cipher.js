@@ -1,4 +1,4 @@
-function banana(buttonId) {
+function userChoice(buttonId) {
   let userInput = document.getElementById('userInput').value;
   let offSet = parseInt(document.getElementById('userOffset').value);
 
