@@ -1,114 +1,63 @@
-body{
-    background-image: url(https://images.alphacoders.com/667/667442.jpg);
-    text-align: center;
+body {
+  background-image: url(https://images.alphacoders.com/667/667442.jpg);
+  background-size: cover;
+  text-align: center;
 }
-
-h1{  
-  font-family: 'Major Mono Display', monospace;
-  font-size: 35px;
-  padding: 28px;
+  
+.title {  
+  font-size: 28px;
+  padding: 18px;
   border: none;
   background-color:black;
-  text-align: center;
-  color: white;
   margin-top: 0%;
 }
 
-.title2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    text-align: center;  
-    color: white;
+.text {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;    
+}
+  
+.subtitle {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+}
+  
+.user-offset {
+  height: 20px;
+  width: 80px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;      
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    text-align: center;  
-    color: white;
+.input-style {
+  resize: none;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  margin-top: 15px;
+}
+  
+.button-grey {
+  background-color: grey;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+  
+.button-red {
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-#userInput{
-    background-color: white;
-    height: 80px;
-    width: 350px;
-    font-size: 20px;
-    border: 3px double black;  
-    position: relative;
-    top: 20%;
-    left: 0%;
-} 
-
-#userOffset{
-    background-color: white;
-    height: 30px;
-    width: 90px;
-    font-size: 20px;
-    border: 3px double black;
-    margin-bottom: 1%;
-    margin-right: 2,5%   
-}
-
-#changedText{
-    background-color: white;
-    height: 80px;
-    width: 350px;
-    text-align: center;
-    resize: none;
-    font-size: 20px;
-    border: 3px double black;
-}
-  .button1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
-	color: white;
-    padding: 8px 15px;
-	background: -moz-linear-gradient(
-		top,
-		#f0f0f0 0%,
-		#b8b8b8 25%,
-		#6b6b6b 75%,
-		#424242);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#f0f0f0),
-		color-stop(0.25, #b8b8b8),
-		color-stop(0.75, #6b6b6b),
-		to(#424242));
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	border-radius: 15px;
-    border: 0px solid #171717; 
-    margin-left: 2%;
+textarea::placeholder {
+    padding: 10px;  
   }
-
-  .button2{
-    -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
-	box-shadow:inset 0px 1px 0px 0px #f5978e;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
-	background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
-	background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
-	background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
-	background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
-	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
-	background-color:#f24537;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Open Sans', sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #810e05;
-    margin-top: 1%;
-  }
-
+  

@@ -1,7 +1,7 @@
 function banana(buttonId) {
   let userInput = document.getElementById('userInput').value
   let offSet = parseInt(document.getElementById('userOffset').value);
-  
+
   if (buttonId === "encode") {
     document.getElementById('changedText').innerHTML = cypherEnc(userInput, offSet)
   } else {
@@ -10,7 +10,7 @@ function banana(buttonId) {
 }
 
 function cypherEnc(userInput, offSet) {
-  let textArray = []; 
+  let textArray = [];
   let ascArray = [];
   let codedText = '';
 
@@ -36,7 +36,7 @@ function cypherEnc(userInput, offSet) {
 }
 
 function cypherDec(userInput, offSet) {
-  let textArray = []; 
+  let textArray = [];
   let ascArray = [];
   let decodedText = '';
 
@@ -59,4 +59,10 @@ function cypherDec(userInput, offSet) {
   }
 
   return decodedText;
+}
+
+function clearScreen () {
+  document.getElementById('userInput').value ='';
+  document.getElementById('userOffset').value ='';
+  document.getElementById('changedText').value ='';
 }
