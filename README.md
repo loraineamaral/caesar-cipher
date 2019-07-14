@@ -36,24 +36,24 @@ e clicar no botão decifrar dessa vez.
 
 ## 3) Requerimentos
 
-* [ ] `README.md` com explicações e desenho do projeto
-* [ ] Usar VanillaJS.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+-  `README.md` com explicações e desenho do projeto
+-  Usar VanillaJS.
+-  Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   cifrado.
-* [ ] Mostrar o resultado da cifra corretamente.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+-  Mostrar o resultado da cifra corretamente.
+-  Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   descifrado.
-* [ ] Mostrar o resultado descifrado corretamente.
-* [ ] Permitir escolher o `offset` (_deslocamento_) a ser usado na
+-  Mostrar o resultado descifrado corretamente.
+-  Permitir escolher o `offset` (_deslocamento_) a ser usado na
   cifragem/descifragem.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Criar testes unitários.
+-  Implementa `cipher.encode`.
+-  Implementa `cipher.decode`.
+-  Criar testes unitários.
 
 
 ## 4) Diagrama de Blocos e Processo
 
-![caeser-cipher](https://github.com/loraineamaral/caesar-cipher/blob/master/Diagrama%20de%20Blocos.jpeg)
+![](./src/assets/diagrama.jpeg)
 
 O programa consiste basicamente em duas entradas de dados que são a mensagem a 
 ser criptografada e o deslocamento alfabético desejado. Em seguida existem duas 
