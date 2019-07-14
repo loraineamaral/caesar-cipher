@@ -1,9 +1,9 @@
 function banana(buttonId) {
-  let userInput = document.getElementById('userInput').value
+  let userInput = document.getElementById('userInput').value;
   let offSet = parseInt(document.getElementById('userOffset').value);
 
-  if (buttonId === "encode") {
-    document.getElementById('changedText').innerHTML = cypherEnc(userInput, offSet)
+  if (buttonId === 'encode') {
+    document.getElementById('changedText').innerHTML = cypherEnc(userInput, offSet);
   } else {
     document.getElementById('changedText').innerHTML = cypherDec(userInput, offSet);
   }
@@ -61,8 +61,8 @@ function cypherDec(userInput, offSet) {
   return decodedText;
 }
 
-function clearScreen () {
-  document.getElementById('userInput').value ='';
-  document.getElementById('userOffset').value ='';
-  document.getElementById('changedText').value ='';
+function clearScreen() {
+  document.getElementById('userInput').value = '';
+  document.getElementById('userOffset').value = '';
+  document.getElementById('changedText').value = '';
 }

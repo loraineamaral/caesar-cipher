@@ -15,14 +15,15 @@
       Escolha a opção e o deslocamento desejado!</p>
   </header>
 
-
   <div>
-    <form>
-      <textarea rows="5" cols="50" type="text" id="userInput" placeholder="Digite aqui o texto que você deseja cifrar ou decifrar"
-        class="input-style subtitle text"></textarea>
-      <p class="subtitle text">Deslocamento desejado:</p> <input type="number" id="userOffset"
-        class="user-offset subtitle text">
-    </form>
+    <main>
+      <form>
+        <textarea rows="5" cols="50" type="text" id="userInput"
+          placeholder="Digite aqui o texto que você deseja cifrar ou decifrar"
+          class="input-style subtitle text"></textarea>
+        <p class="subtitle text">Deslocamento desejado:</p> <input type="number" id="userOffset"
+          class="user-offset subtitle text">
+      </form>
   </div>
 
   <div>
@@ -31,13 +32,15 @@
   </div>
 
   <div>
-    <textarea rows="5" cols="50" id="changedText" class="input-style subtitle text" placeholder="Veja aqui o resultado"></textarea>
+    <textarea rows="5" cols="50" id="changedText" class="input-style subtitle text"
+      placeholder="Veja aqui o resultado"></textarea>
   </div>
 
   <div>
     <button class="button-red subtitle text" onclick="clearScreen()">LIMPAR TUDO!</button>
   </div>
-
+  </main>
+  
   <script src="./src/tests.js"></script>
   <script src="./src/cipher.js"></script>
 </body>
